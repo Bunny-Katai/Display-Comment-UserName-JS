@@ -1,0 +1,141 @@
+body{
+    background-color: whitesmoke;
+}
+
+#post-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#caption-section {
+    width: 80%;
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    box-shadow: gray 0 1px 3px;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.username {
+    color: darkgray;
+    margin: 0;
+    font-size: x-small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.control {
+    color: lightblue;
+    margin: 0;
+    font-size: x-small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.post-caption {
+    margin: 0;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#comment-section {
+    background-color: lightgray;
+    border-left: darkgray solid 1px;
+    border-right: darkgray solid 1px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px 0 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.comment-container {
+    background-color: white;
+    box-shadow: gray 0 1px 3px;
+    width: 90%;
+    border-radius: 1px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+
+.comment-container img {
+    width: 30px;
+    height: 30px;
+}
+
+.comment-container p {
+    margin: 0;
+}
+
+#input-section {
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    border-radius: 0 0 1px 1px;
+    padding: 20px; 
+    box-shadow: gray 0 1px 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#display-name-input {
+    width: 100px;
+}
+
+#comment-input {
+    width: 73%;
+}
+
+.comment-creation-input {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 5px 8px;
+    border: lightgray solid 1px;
+    border-radius: 3px;
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.comment-creation-input::placeholder {
+    color: lightgray;
+}
+
+.submit-button {
+    font-size: small;
+    color: lightblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+}
+
+.submit-button:focus {
+    color: gray;
+}
+
+.content-container {
+    width: 100%;
+}
+
+.separate-them {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
