@@ -25,25 +25,26 @@ $('#main-submit').click(function () {
         $('.delete-control').click(function () {
             $(this).parent().parent().parent().parent().remove();
         }); 
-        $('.edit-control').click(function () {
-            $(this).parent().parent().parent().append(
-                `<div>
-                    <input class="comment-creation-input">
-                    <div>
-                        <button type="submit" class="submit-button secondary-submit">Submit</button>
-                        <button type="button" class="submit-button cancel-button">Cancel</button>
-                </div>`
-            );
-            $('.secondary-submit').click(function () {
-                if ($(this).parent().prev().val() !== '') {
-                    let newComment = $(this).parent().prev().val();
-                    $(this).parent().parent().prev().html(newComment);
-                }
-                $(this).parent().parent().remove();
-            });
-            $('.cancel-button').click(function () {
-                $(this).parent().parent().remove();
-            });
-        });
     }
+});
+
+$('#comment-section').on('click', '.edit-control', function () {
+    $(this).parent().parent().parent().append(
+        `<div>
+            <input class="comment-creation-input">
+            <div>
+                <button type="submit" class="submit-button secondary-submit">Submit</button>
+                <button type="button" class="submit-button cancel-button">Cancel</button>
+        </div>`
+    );
+    $('.secondary-submit').click(function () {
+        if ($(this).parent().prev().val() !== '') {
+            let newComment = $(this).parent().prev().val();
+            $(this).parent().parent().prev().html(newComment);
+        }
+        $(this).parent().parent().remove();
+    });
+    $('.cancel-button').click(function () {
+        $(this).parent().parent().remove();
+    });
 });
